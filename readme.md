@@ -105,24 +105,12 @@ Overall, they do not provide an algorithm to be implemented.
 The Quine-McCluskey Algorithm, developed by W.V. Quine, and later
 expanded on by Edward J. McCluskey, works for any number of variables,
 and can be proven and explained by the following example.
-$f(d,c,b,a) = \sum(0,1,2,5,6,7,8,9,10,14)$ We can take this 4-bit
+
+![Equation](am.gif)
+We can take this 4-bit
 summation of minterms and write each one out with its 4-bit binary
 counterpart. In this example:
 
-  ---- ------
-   0    0000
-   1    0001
-   2    0010
-   5    0101
-   6    0110
-   7    0111
-   8    1000
-   9    1001
-   10   1010
-   14   1110
-  ---- ------
-
-  : Binary Representation of Minterms[]{label="table:1"}
 
    Number of 1s   Minterms   Decimal
   -------------- ---------- ---------
