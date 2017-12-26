@@ -107,6 +107,7 @@ expanded on by Edward J. McCluskey, works for any number of variables,
 and can be proven and explained by the following example.
 
 ![Equation](am.gif)
+
 We can take this 4-bit
 summation of minterms and write each one out with its 4-bit binary
 counterpart. In this example:
@@ -124,8 +125,6 @@ counterpart. In this example:
                     1010       10
                     0111        7
                     1110       14
-
-  : Groupings Pass 1[]{label="table:2"}
 
 In this algorithm, the first way of solving an unsimplified canonical
 expression is to group it by the number of '1's in each minterm. Upon
@@ -146,42 +145,6 @@ The pattern soon emerges that using the groups formed earlier, each
 minterm can only be combined with a term from an adjacent group. if we
 expand each possible combination of the first group, we end up with
 
-  ------ ------
-   0000   0001
-   0000   0010
-   0000   1000
-  ------ ------
-
-  : Combination Pattern of Group 1[]{label="table:3"}
-
-As we do this for each group we can simplify each equation to whatever
-the binary representation is. Group 1 also does not compare with Group
-3, as they are 2 bits apart, and would no have only 1 different bit.
-After we expand through every group, the minterm list would be:
-
-X = \"Don't Care\" (can be either 1 or 0) Values
-
-  --------------- --------
-     Minterms      Binary
-   \[0.5ex\] 0,1    000X
-        0,2         00X0
-        0,8         X000
-        1,5         0X01
-        1,9         X001
-        2,6         0X10
-       2,10         X010
-        8,9         100X
-       8,10         10X0
-        5,7         01X1
-        6,7         011X
-       6,14         X110
-       10,14        1X10
-  --------------- --------
-
-  : Combinations After Pass 1[]{label="table:4"}
-
-We then take a second pass, completing the same task on this group of
-numbers
 
    Group   Decimal   Minterms
   ------- --------- ----------
@@ -198,8 +161,6 @@ numbers
             011X       6,7
             X110       6,14
             1X10      10,14
-
-  : Groupings Pass 2[]{label="table:5"}
 
 Thus, taking the combinations of all the minterms with the adjacent
 groups, we minimize the equations to:
