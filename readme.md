@@ -69,6 +69,7 @@ but it can now be done with ease using the STaC states diagram:
 
 
 ![A Modulo 10 Up/Down Counter Created with STaC](Mod_10.PNG)
+<p align="center">A Modulo 10 Up/Down Counter Created with STaC</p>
 
 The states are represented by the yellow circles, the labels, which can
 be changed, are the outputs, and the arrows represent the transitions.
